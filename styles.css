@@ -1,0 +1,126 @@
+/*
+* {
+  border: 1px solid red;
+}
+*/
+
+body {
+    margin: auto;
+  }
+  
+  .main {
+    background-color: black;
+    color: #8badcb;
+    font-family: Bebas Neue, Impact, -apple-system, Segoe UI, Arial, sans-serif;
+    padding-bottom: 100px;
+  
+  }
+  
+  .nav {
+    color: #8badcb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+    padding: 10px 50px;
+  }
+  
+  .nav-logo {
+    margin: 0 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 50px;
+    padding: 100px;
+    color: white;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    /* Come back to this at some point and figure out how to do the spacing between the header, text, and button. */
+  }
+  
+  button {
+    background-color: #FF8200;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    width: 75px;
+    padding: 5px;
+  }
+  
+  img {
+    border-radius: 10px;
+  }
+  
+  .middle {
+    font-family: Bebas Neue, Impact, -apple-system, Segoe UI, Arial, sans-serif;
+    padding: 50px 100px 150px 100px;
+    background-color: #8badcb;
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    display: flex;
+    justify-content: center;
+    margin: 0 48px;
+    padding: 25px;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .text {
+    color:black;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  
+  .image2 {
+    height: 200px;
+    width: 200px;
+  }
+  
+  .sources {
+    background-color: white;
+    color: #8badcb;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer {
+    background-color: black;
+    font-family: Bebas Neue, Impact, -apple-system, Segoe UI, Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  

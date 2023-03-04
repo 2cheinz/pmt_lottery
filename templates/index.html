@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Lottery Ball Machine</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navbar content -->
@@ -16,18 +16,27 @@
         </div>
     </nav>
     <!-- End of Navbar content -->
-    <div class="hero">
-        <div class="form-group">
-            <h1>Guess the Numbers</h1>
-            <form class="row gy-2 gx-3 align-items-center" method="POST" action="/">
-                <div class="col-auto">
-                <label class="visually-hidden" for="guess">Enter your guess:</label>
-                <input class="form-control" type="number" name="guess" id="guess" min="1" max="100" required>
-                <button class="btn btn-primary" type="submit">Submit</button>
-                </div>
-            </form>
+    <div class="container text-center">
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <h2>Guess the Numbers</h2>
+                <form class="row gy-2 gx-3 align-items-center" method="POST" action="/">
+                    <div class="col-auto">
+                    <label class="visually-hidden" for="guess">Enter your guess:</label>
+                    <input class="form-control" type="number" name="guess" id="guess" min="1" max="100" required>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <h2>AWLs Guess</h2>
+            </div>
+            <div class="col">
+                <h2>Hank's Guess</h2>
+            </div>
         </div>
     </div>
+    <div>BODY</div>
 
     <div class="footer">
         <p>Copyright &#169; DesHeinz 2023
