@@ -24,10 +24,20 @@ def index():
         cursor.close()
         cnx.close()
 
-        flash(f"Your guess is {guess}!!", category="success")
+        # flash(f"Your guess is {guess}!!", category="success")
         print(f"Your guess is {guess}")
+        
+        # Retrieve the most frequently entered number
+        cnx = mysql.connector.connect(user='sqluser', password='password',
+                                    host='localhost', database='guesses')
+        cursor = cnx.cursor()
+        query = "SELECT guess, COUNT(*) AS frequency FROM guesses GROUP BY guess ORDER BY frequency DESC LIMIT 1"
+        cursor.execute(query)
+        result = cursor.fetchone()
+        cursor.close()
+        cnx.close()
 
-    return render_template('index.html')
+    return render_template('index.html', awl_guess=result[0])
 
 
 # @app.route('/submit_guess', methods=['POST'])
