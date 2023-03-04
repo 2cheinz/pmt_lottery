@@ -1,7 +1,8 @@
-from flask import Flask, request, render_template, redirect
+from flask import Flask, request, render_template, redirect, flash
 import mysql.connector
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'pmtgames'
 
 #define a route to the index.html file
 @app.route('/', methods=["POST", "GET"])
@@ -23,6 +24,7 @@ def index():
         cursor.close()
         cnx.close()
 
+        flash(f"Your guess is {guess}!!", category="success")
         print(f"Your guess is {guess}")
 
     return render_template('index.html')
