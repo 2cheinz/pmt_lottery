@@ -37,6 +37,7 @@ body {
   
   .hero {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 10px 50px;
@@ -44,31 +45,47 @@ body {
     color: white;
     background-color: orange;
     border: 1px solid red;
-
   }
+
+  /* Styles for desktop screens */
+@media (min-width: 1025px) {
+  .hero {
+    padding: 100px;
+  }
+  .user-guess,
+  .awl-guess,
+  .hanks-guess {
+    width: 30%;
+  }
+}
   
   .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     background-color: black;
     color: white;
     padding: 10px;
     border-radius: 10px;
-    /* Come back to this at some point and figure out how to do the spacing between the header, text, and button. */
+  }
+  
+  .hero-content, .user-guess, .awl-guess, .hanks-guess {
+    height: 200px;
+    width: 300px;
   }
   
   .user-guess {
     color: white;
+    display: flex;
   }
 
   .awl-guess {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     background-color: black;
     color: white;
@@ -80,7 +97,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     background-color: black;
     color: white;
@@ -98,11 +115,7 @@ body {
   }
 
 
-  
-  img {
-    border-radius: 10px;
-  }
-  
+
   .middle {
     font-family: Bebas Neue, Impact, -apple-system, Segoe UI, Arial, sans-serif;
     padding: 50px 100px 150px 100px;
@@ -137,11 +150,6 @@ body {
     font-size: 12px;
   }
   
-  
-  .image2 {
-    height: 200px;
-    width: 200px;
-  }
   
   .sources {
     background-color: white;
