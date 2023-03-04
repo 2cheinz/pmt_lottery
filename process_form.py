@@ -20,7 +20,7 @@ def index():
         cursor.execute(query, (guess,))
         cnx.commit()
 
-        # Close the database connection
+        # Close the database connections
         cursor.close()
         cnx.close()
 
